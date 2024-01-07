@@ -21,7 +21,7 @@ function Navbar({query, movieList, setQuery, handleDarkMode, isDark, inputHook,h
         <ResultNum movieList={movieList} />
       </div>
       <span className="darkIcon" onClick={handleDarkMode}>
-        {isDark ? "☀️" : "🌑"}
+        {isDark ? "🌙" : "🌑"}
       </span>
 
       {modalOpen && (

@@ -130,7 +130,7 @@ function SelectedMoviePreview({
     async function fetchingSelectedMovies(){
       try{
         setIsLoading(true)
-        let data = await fetch(`http://www.omdbapi.com/?apikey=${Key}&i=${selectedMovieId}`) 
+        let data = await fetch(`https://www.omdbapi.com/?apikey=${Key}&i=${selectedMovieId}`) 
         let res = await data.json()
         console.log(res)
         setSelectedMovie(res)
